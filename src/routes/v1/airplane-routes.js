@@ -25,5 +25,10 @@ router.delete("/:id",
     AirplaneController.destroyAirplane
 );
 
+// /api/v1/airplanes/:id DELETE
+router.patch("/:id",
+    AirplaneMiddlewares,
+    AirplaneController.updateAirplane
+);
 module.exports = router;
  
