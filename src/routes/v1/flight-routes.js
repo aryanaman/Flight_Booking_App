@@ -10,25 +10,25 @@ router.post("/",
     FlightController.createFlight
 );
 
-// /api/v1/flights GET
-router.get("/",
-    FlightController.getFlights
-);
+// // /api/v1/flights GET
+// router.get("/",
+//     FlightController.getFlights
+// );
 
-// /api/v1/flights/:id GET
-router.get("/:id",
-    FlightController.getFlight
-);
+// // /api/v1/flights/:id GET
+// router.get("/:id",
+//     FlightController.getFlight
+// );
 
-// /api/v1/flights/:id DELETE
-router.delete("/:id",
-    FlightController.destroyFlight
-);
+// // /api/v1/flights/:id DELETE
+// router.delete("/:id",
+//     FlightController.destroyFlight
+// );
 
-// /api/v1/flights/:id DELETE
-router.patch("/:id",
-    FlightMiddlewares,
-    FlightController.updateFlight
-);
+// // /api/v1/flights/:id DELETE
+// router.patch("/:id",
+//     FlightMiddlewares,
+//     FlightController.updateFlight
+// );
 module.exports = router;
  
